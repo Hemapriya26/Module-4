@@ -10,26 +10,17 @@ To write a Python program that merges *two dictionaries* and combines their key-
 3. Call the merge() function and print the merged dictionary.
 
 ## 🧾 Program
+
 ```
-# Define two dictionaries
-dict1 = {'a': 10, 'b': 20, 'c': 30}
-dict2 = {'d': 40, 'b': 50, 'e': 60}
-
-# Function to merge dictionaries
-def merge(d1, d2):
-    merged_dict = {**d1, **d2}  # Unpacking operator merges dictionaries
-    return merged_dict
-
-# Call the function and print the result
-merged_result = merge(dict1, dict2)
-print("Merged Dictionary:", merged_result)
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+merged_dict = dict1.copy() 
+merged_dict.update(dict2)
+print("Merged Dictionary:", merged_dict)
 ```
 
 ## Output
-<img width="802" height="48" alt="image" src="https://github.com/user-attachments/assets/75fb488e-fb17-42a8-9d79-8df56b84e49c" />
-
+![442481750-aad5cc3e-2ed6-479e-8779-a37f27bac877](https://github.com/user-attachments/assets/ab703d7f-abbf-42aa-afba-b422b66929de)
 
 ## Result
-The program successfully merges two dictionaries.
-All key-value pairs from both dictionaries are combined.
-If a key exists in both dictionaries (like 'b'), the value from the second dictionary (dict2) overwrites the value from the first dictionary (dict1).
+Thus, the program has been executed successfully.
