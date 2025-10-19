@@ -30,4 +30,4 @@ count_non_T_lines("story.txt")
 
 ## Result
 Thus the program has been executed successfully.
-Thus the program has been executed suc
+
