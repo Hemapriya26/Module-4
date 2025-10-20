@@ -1,57 +1,32 @@
-# 🐍 Python OOP: Abstract Class & Method Example
+# Classes and Objects in Python: Calculate the Area of a Circle
 
-## 🎯 AIM
+## 🎯 Aim
+To write a Python program that calculates the *area of a circle* based on the radius provided by the user. This program uses a class named cse and a method mech to perform the calculation.
 
-To create an *abstract class* named Shape with an *abstract method* calculate_area, and implement this method in two subclasses: Rectangle and Circle.
+## 🧠 Algorithm
+1. *Get user input*: Take the radius of the circle as input from the user.
+2. *Define the class*: Create a class named cse.
+3. *Define the method*: Inside the class, define the method mech to calculate the area of the circle using the formula:  
+   Area = pi *r^2 
+4. *Execute the program*: Create an object of the class and call the method with the radius value.
 
----
-
-## 🧠 ALGORITHM
-
-1. *Import ABC module*:
-   - Use from abc import ABC, abstractmethod to define abstract classes and methods.
-
-2. **Create Abstract Class Shape**:
-   - Define an abstract method calculate_area() with @abstractmethod.
-
-3. **Create Subclass Rectangle**:
-   - Set default values for length and breadth.
-   - Override calculate_area() to compute the rectangle area.
-
-4. **Create Subclass Circle**:
-   - Set default value for radius.
-   - Override calculate_area() to compute the circle area.
-
-5. *Create Objects & Call Methods*:
-   - Instantiate Rectangle and Circle.
-   - Call their calculate_area() methods.
-
----
-
-## 💻 Program
+## 🧾 Program
 ```
-from abc import ABC
-class Shape(ABC):
-    def calculate_area(self):
-        pass
-class Rectangle(Shape):
-    length = 5
-    breadth =3 
-def calculate_area(self):
-        return self.length * self.breadth
-
-class Circle(Shape):
-  radius = 4
-  def calculate_area(self):
-        return self.radius * self.radius*3.14
-
-rec=Rectangle()
-cir=Circle()
-print("Area of a rectangle:", rec.calculate_area()) 
-print("Area of a circle:", cir.calculate_area()) 
+import math as m
+class pen:
+    def stationary(self,a):
+        self.a=a
+    def f(self):
+        print(f"Area of circle: {self.a*self.a*m.pi:.2f}")
+d=int(input())
+s=pen()
+s.stationary(d)
+s.f()
 ```
 ## Output
-<img width="1177" height="271" alt="443950839-7b2ffd74-5cf9-4020-828a-e8a8f8a0cfc9" src="https://github.com/user-attachments/assets/410a645c-1f20-4053-994e-521648c248e1" />
+![WhatsApp Image 2025-10-19 at 19 51 59_c85a28c5](https://github.com/user-attachments/assets/975e2f70-7c72-4b8d-86dc-382ac6900914)
+
+
 
 ## Result
-Thus, the python program is executed successfully.
+The program successfully calculates the area of a circle using classes and objects
